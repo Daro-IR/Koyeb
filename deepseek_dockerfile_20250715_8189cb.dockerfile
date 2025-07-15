@@ -7,7 +7,7 @@ RUN apt update && \
     rm -rf /var/lib/apt/lists/*
 
 # Descargar y extraer SoftEther (usa la última versión)
-RUN wget https://github.com/Daro-IR/Koyeb/softether-vpnserver-v4.44-9807-rtm-2025.04.16-linux-arm_eabi-32bit.tar.gz && \
+RUN wget  https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.44-9807-rtm/softether-vpnserver-v4.44-9807-rtm-2025.04.16-linux-arm64-64bit.tar.gz && \
     tar -xzf softether-vpnserver-*.tar.gz && \
     rm softether-vpnserver-*.tar.gz && \
     cd vpnserver && \
